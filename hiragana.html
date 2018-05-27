@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Hiragana</title>
+	    <link rel="stylesheet" type="text/css" href="styles.css">
+	    <link rel="icon" href="hiragana_icon.png">
+	</head>
+
+	<body>
+		<div class="shapka">
+			<h1>Hiragana Audio</h1>
+		</div>
+		<div class="hiragana-rows">
+			<div class="flex-row">
+				<div onclick="play('a')" class="hiragana-char">あ</div>
+				<div onclick="play('ka')" class="hiragana-char">か</div>
+				<div onclick="play('sa')" class="hiragana-char">さ</div>
+				<div onclick="play('ta')" class="hiragana-char">た</div>
+				<div onclick="play('na')" class="hiragana-char">な</div>
+				<div onclick="play('ha')" class="hiragana-char">は</div>
+				<div onclick="play('ma')" class="hiragana-char">ま</div>
+				<div onclick="play('ya')" class="hiragana-char">や</div>
+				<div onclick="play('ra')" class="hiragana-char">ら</div>
+				<div onclick="play('wa')" class="hiragana-char">わ</div>
+			</div>
+			<div class="flex-row">
+				<div onclick="play('i')" class="hiragana-char">い</div>
+				<div onclick="play('ki')" class="hiragana-char">き</div>
+				<div onclick="play('shi')" class="hiragana-char">し</div>
+				<div onclick="play('chi')" class="hiragana-char">ち</div>
+				<div onclick="play('ni')" class="hiragana-char">に</div>
+				<div onclick="play('hi')" class="hiragana-char">ひ</div>
+				<div onclick="play('mi')" class="hiragana-char">み</div>
+				<div class="hiragana-char"></div>
+				<div onclick="play('ri')" class="hiragana-char">り</div>
+				<div class="hiragana-char"></div>
+			</div>
+			<div class="flex-row">
+				<div onclick="play('u')" class="hiragana-char">う</div>
+				<div onclick="play('ku')" class="hiragana-char">く</div>
+				<div onclick="play('su')" class="hiragana-char">す</div>
+				<div onclick="play('tsu')" class="hiragana-char">つ</div>
+				<div onclick="play('nu')" class="hiragana-char">ぬ</div>
+				<div onclick="play('fu')" class="hiragana-char">ふ</div>
+				<div onclick="play('mu')" class="hiragana-char">む</div>
+				<div onclick="play('yu')" class="hiragana-char">ゆ</div>
+				<div onclick="play('ru')" class="hiragana-char">る</div>
+				<div onclick="play('o')" class="hiragana-char">を</div>
+			</div>
+			<div class="flex-row">
+				<div onclick="play('e')" class="hiragana-char">え</div>
+				<div onclick="play('ke')" class="hiragana-char">け</div>
+				<div onclick="play('se')" class="hiragana-char">せ</div>
+				<div onclick="play('te')" class="hiragana-char">て</div>
+				<div onclick="play('ne')" class="hiragana-char">ね</div>
+				<div onclick="play('he')" class="hiragana-char">へ</div>
+				<div onclick="play('me')" class="hiragana-char">め</div>
+				<div class="hiragana-char"></div>
+				<div onclick="play('re')" class="hiragana-char">れ</div>
+				<div class="hiragana-char"></div>
+			</div>
+			<div class="flex-row">
+				<div onclick="play('o')" class="hiragana-char">お</div>
+				<div onclick="play('ko')" class="hiragana-char">こ</div>
+				<div onclick="play('so')" class="hiragana-char">そ</div>
+				<div onclick="play('to')" class="hiragana-char">と</div>
+				<div onclick="play('no')" class="hiragana-char">の</div>
+				<div onclick="play('ho')" class="hiragana-char">ほ</div>
+				<div onclick="play('mo')" class="hiragana-char">も</div>
+				<div onclick="play('yo')" class="hiragana-char">よ</div>
+				<div onclick="play('ro')" class="hiragana-char">ろ</div>
+				<div onclick="play('n')" class="hiragana-char">ん</div>
+			</div>
+		</div>
+	</body>
+	<script type="jquery-3.3.1.min.js"></script>
+	<script>
+		function play(characterName){
+			var audio = new Audio(characterName + ".mp3");
+			audio.play();
+		}
+
+		
+
+		$(".hiragana-char").mousedown(function(){
+			$(this).css("background-color", "#95999d");
+		});
+		
+		$(".hiragana-char").mouseup(function(){
+			$(this).css("background-color", "#313639");
+		});
+	</script>
+</html>

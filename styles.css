@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	background-color: #313639;
+	
+}
+
+.shapka{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	color: #F9F9F9;
+	font-family: arial;
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.hiragana-rows{
+	font-family: 'Hannari', serif;
+	color: #F9F9F9;
+	font-size: 2em;
+	width: 40%;
+}
+
+.hiragana-char{
+	cursor: pointer;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
